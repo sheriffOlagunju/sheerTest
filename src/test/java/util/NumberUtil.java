@@ -3,6 +3,10 @@ package util;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class NumberUtil {
 	public static int generateRandomNumber(int min, int max) {
         return min + (int) (Math.random() * ((max - min) + 1));

@@ -13,6 +13,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class BasePage {
 
 	public static WebDriver webDriver = null;
@@ -30,6 +34,10 @@ public class BasePage {
 		_webDriverWait.until(ExpectedConditions.jsReturnsValue("document readyState complete"));
 	}
 
+	/**
+	 * @param element
+	 * @return
+	 */
 	protected WebElement waitForVisibilityOfElement(WebElement element) {
 		return _webDriverWait.until(ExpectedConditions.visibilityOf(element));
 	}

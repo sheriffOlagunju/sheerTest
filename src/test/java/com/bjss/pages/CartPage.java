@@ -8,6 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class CartPage extends BasePage{
 	
 	private static final By PRODUCT_NAME = By.cssSelector("td:nth-child(2)>p>a");
@@ -131,6 +135,9 @@ public class CartPage extends BasePage{
 		return this;
 	}
 	
+	/**
+	 * @return
+	 */
 	public String retrieveOrder() {
 		return getElementText(orderNumber,"").split("reference")[1].split("in")[0].trim();
 	}

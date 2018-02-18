@@ -4,6 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class HomePage extends BasePage {
 	
 	    @FindBy(className = "login")

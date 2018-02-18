@@ -11,6 +11,10 @@ import com.bjss.ItemDetails;
 import com.bjss.ItemList;
 import com.bjss.tests.BaseTest.ProductSize;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class ShoppingPage extends BasePage {
 
 	@FindBy(css = "a[title=Women]")
@@ -81,7 +85,6 @@ public class ShoppingPage extends BasePage {
 
 	public ShoppingPage doQuickView() {
 		randomNumber = new Random().nextInt(displayedProducts.size());
-		System.out.println("Quick wiew on " + randomNumber + " product");
 		WebElement element = displayedProducts.get(randomNumber);
 		scrollScreenUntilVisibiltyofElement(element);
 		hoverOverElement(element, webDriver);

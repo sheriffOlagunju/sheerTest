@@ -1,5 +1,9 @@
 package com.bjss;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class ItemDetails {
 
 	private String itemSize;
@@ -33,32 +37,6 @@ public class ItemDetails {
 	}
 	public int getItemQuantity() {
 		return itemQuantity;
-	}
-
-	public void setItemSize(String size) {
-		itemSize = size;
-	}
-
-	public void setItemName(String name) {
-	     itemName = name;
-	}
-	
-	public void setItemColor(String color) {
-		itemColor = color;
-	}
-
-	public void setItemPrice(double productPrice) {
-		itemPrice = productPrice;
-	}
-	public void setItemQuantity(int quantity) {
-		 quantity = itemQuantity;
-	}
-	
-	@Override
-	public String toString() {
-		System.out.println("Details of added item is size:"+itemSize +" name:"+itemName+" color: "+itemColor+" price: "+itemPrice+" quantity: "+ itemQuantity);
-		return "Details of added item is size:"+itemSize +" name:"+itemName+" color: "+itemColor+" price: "+itemPrice+" quantity: "+ itemQuantity;
-		
 	}
 
 }

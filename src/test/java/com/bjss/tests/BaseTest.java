@@ -7,6 +7,10 @@ import util.SeleniumBaseTest;
 
 public abstract class BaseTest extends SeleniumBaseTest {
 
+	/**
+	 * @author sheriffolagunju
+	 *
+	 */
 	public enum ProductSize {
 
 		SMALL_SIZE("S"),

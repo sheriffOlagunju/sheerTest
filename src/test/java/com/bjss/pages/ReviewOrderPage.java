@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public class ReviewOrderPage extends BasePage{
 	
 	private static final By ORDER_DETAILS = By.cssSelector("td:nth-child(7)>a[class^=btn]");

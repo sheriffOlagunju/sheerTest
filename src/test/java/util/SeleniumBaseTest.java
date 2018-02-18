@@ -15,6 +15,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author sheriffolagunju
+ *
+ */
 public abstract class SeleniumBaseTest {
 
 	protected static WebDriver driver;
