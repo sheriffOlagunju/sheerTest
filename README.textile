@@ -1,0 +1,18 @@
+h1(#test-framework). Test Framework
+
+h2(#structure). Structure
+
+The Framework Directory structure is as follows
+
+-> driver 
+
+* used is chromedriver as it's been catered for as it's used in the project. Other drivers can be implemented as desired.
+
+ -> src ->screenshots -> resources - this where chromedriver is located and application.properties for test data -> target - this is where screenshot is stored -> surefire -report check emailable-report.html or index.html for detailed report
+
+bc.. -> test 
+
+  -> java
+    -> com.bjss
+      -> ItemDetails and ItemList this is where details of items shopped for are kept and retrieved for later use
+
