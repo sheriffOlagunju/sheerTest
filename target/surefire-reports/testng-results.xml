@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="11315" started-at="2018-02-16T23:10:34Z" finished-at="2018-02-16T23:10:45Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="11315" started-at="2018-02-16T23:10:34Z" finished-at="2018-02-16T23:10:45Z">
+      <class name="com.bjss.tests.MoiTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.bjss.tests.MoiTest@458ad742]" name="SetUp" is-config="true" duration-ms="11049" started-at="2018-02-16T23:10:34Z" finished-at="2018-02-16T23:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="theTest()[pri:0, instance:com.bjss.tests.MoiTest@458ad742]" name="theTest" duration-ms="0" started-at="2018-02-16T23:10:45Z" finished-at="2018-02-16T23:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bjss.tests.MoiTest@458ad742]" name="tearDown" is-config="true" duration-ms="232" started-at="2018-02-16T23:10:45Z" finished-at="2018-02-16T23:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bjss.tests.MoiTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
