@@ -7,12 +7,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.text.WordUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.SkipException;
 
 import util.SeleniumBaseTest;
 
@@ -24,6 +27,8 @@ public class TestListener implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		System.out.println(">>>>>>>>>> This test "+ result.getName()+" has failed <<<<<<<<<<<<<<<<<");
 		String gethMethod = result.getName().toString().trim();
+		printStackTrace(result.getThrowable());
+		
 		try {
 			takeScreenShot(gethMethod);
 		} catch (IOException e) {
@@ -88,5 +93,27 @@ public class TestListener implements ITestListener{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	private static void printStackTrace(Throwable t) {
+		System.out.println("-----------------------------------------------------------------------");
+		System.out.println("|       Cause     |  " + t.getCause());
+		System.out.println("|       Class     |  " + t.getCause()); t.getClass().getSimpleName();
+		System.out.println("|       Message   |  " + WordUtils.wrap(t.getMessage(), 70));
+		System.out.println("-----------------------------------------------------------------------");
+		if (t instanceof SkipException) {
+			throw new SkipException("Test Skipped.");
+		}
+		StackTraceElement[] elementList = t.getStackTrace();
+		System.out.println("ATTENTION ! Below are the lines of code where the test fails");
+		System.out.println("------------------------------------------------------------------------");
+		for (int j = 0; j < elementList.length; j++) {
+			if (elementList[j].getClassName().contains("com.mg")) {
+				System.out.println(elementList[j]);
+			}
+		}
+		System.out.println("------------------------------------------------------------------------");
+		Assert.fail("Some Exception Occurred ..... Please check the error messages.");
+	}
+
 
 }

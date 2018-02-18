@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="54888" started-at="2018-02-18T18:56:51Z" finished-at="2018-02-18T18:57:46Z">
+  <suite name="Suite1" duration-ms="56102" started-at="2018-02-18T21:35:12Z" finished-at="2018-02-18T21:36:08Z">
     <groups>
     </groups>
-    <test name="EcommerceTest" duration-ms="54888" started-at="2018-02-18T18:56:51Z" finished-at="2018-02-18T18:57:46Z">
+    <test name="EcommerceTest" duration-ms="56102" started-at="2018-02-18T21:35:12Z" finished-at="2018-02-18T21:36:08Z">
       <class name="com.bjss.tests.EcommerceTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="SetUp" is-config="true" duration-ms="17128" started-at="2018-02-18T18:56:52Z" finished-at="2018-02-18T18:57:09Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="SetUp" is-config="true" duration-ms="15320" started-at="2018-02-18T21:35:12Z" finished-at="2018-02-18T21:35:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="raiseOrderTest()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="raiseOrderTest" duration-ms="26024" started-at="2018-02-18T18:57:09Z" finished-at="2018-02-18T18:57:35Z">
+        <test-method status="PASS" signature="raiseOrderTest()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="raiseOrderTest" duration-ms="26056" started-at="2018-02-18T21:35:27Z" finished-at="2018-02-18T21:35:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- raiseOrderTest -->
-        <test-method status="PASS" signature="reviewOrderTest()[pri:1, instance:com.bjss.tests.EcommerceTest@43738a82]" name="reviewOrderTest" duration-ms="7109" started-at="2018-02-18T18:57:35Z" finished-at="2018-02-18T18:57:42Z">
+        <test-method status="PASS" signature="reviewOrderTest()[pri:1, instance:com.bjss.tests.EcommerceTest@43738a82]" name="reviewOrderTest" duration-ms="9107" started-at="2018-02-18T21:35:53Z" finished-at="2018-02-18T21:36:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reviewOrderTest -->
-        <test-method status="FAIL" signature="captureFailureTest()[pri:2, instance:com.bjss.tests.EcommerceTest@43738a82]" name="captureFailureTest" duration-ms="3693" started-at="2018-02-18T18:57:42Z" finished-at="2018-02-18T18:57:46Z">
+        <test-method status="FAIL" signature="captureFailureTest()[pri:2, instance:com.bjss.tests.EcommerceTest@43738a82]" name="captureFailureTest" duration-ms="4306" started-at="2018-02-18T21:36:02Z" finished-at="2018-02-18T21:36:06Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Black] but found [Maroon]]]>
+              <![CDATA[expected [Yellow] but found [Maroon]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Black] but found [Maroon]
+              <![CDATA[java.lang.AssertionError: expected [Yellow] but found [Maroon]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -64,7 +64,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="tearDown" is-config="true" duration-ms="404" started-at="2018-02-18T18:57:46Z" finished-at="2018-02-18T18:57:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bjss.tests.EcommerceTest@43738a82]" name="tearDown" is-config="true" duration-ms="376" started-at="2018-02-18T21:36:07Z" finished-at="2018-02-18T21:36:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
